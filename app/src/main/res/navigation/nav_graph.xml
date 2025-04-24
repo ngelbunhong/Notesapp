@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/noteFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.notesapp.ui.NoteFragment"
+        android:label="MY STORY">
+
+        <action
+            android:id="@+id/action_noteFragment_to_addNoteFragment"
+            app:destination="@id/insertNoteFragment" />
+        <action
+            android:id="@+id/action_noteFragment_to_noteDetailFragment"
+            app:destination="@+id/noteDetailFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/insertNoteFragment"
+        android:name="com.example.notesapp.ui.InsertNoteFragment"
+        android:label="Inset Note" >
+        <argument
+            android:name="note"
+            app:argType="com.example.notesapp.data.local.Note"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.example.notesapp.ui.NoteDetailFragment"
+        android:label="Note Detail">
+
+        <argument
+            android:name="detail"
+            app:argType="com.example.notesapp.data.local.Note"
+            app:nullable="true"
+            />
+
+    </fragment>
+</navigation>

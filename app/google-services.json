@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183436850059",
+    "project_id": "adroit-metric-306502",
+    "storage_bucket": "adroit-metric-306502.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183436850059:android:205c175cd572b58a4c758e",
+        "android_client_info": {
+          "package_name": "com.example.notesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1OOCH7-8kZmoCcicOvABAvK_02d-JAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
